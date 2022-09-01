@@ -30,6 +30,8 @@ export class PostsController {
     await this.cacheManager.set('posts', posts);
     const getCachePosts = await this.cacheManager.get('posts');
 
+    console.log('cacheando', getCachePosts);
+
     return getCachePosts;
   }
 }
