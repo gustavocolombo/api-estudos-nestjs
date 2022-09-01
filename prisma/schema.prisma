@@ -17,7 +17,7 @@ model User {
   password String
 
   posts    Posts[]
-
+  
   @@map("users")
 }
 
